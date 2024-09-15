@@ -83,7 +83,7 @@ fetch('map.geojson')
         L.geoJSON(data, {
             onEachFeature: function (feature, layer) {
                 if (feature.properties) {
-                    layer.bindPopup("City: " + feature.properties.City + "<br>Place: " + feature.properties.Place + "<br>Population (1985): " + feature.properties.Pop_1985);                }
+                    layer.bindPopup("City: " + feature.properties.City + "<br>Place: " + feature.properties.Place + "<br>Population (1985): " + feature.properties.Pop_1985);}
             }
         }).addTo(map);
     })
